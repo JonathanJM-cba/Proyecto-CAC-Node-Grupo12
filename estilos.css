@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fonts*/
+@font-face {
+    font-family: "montserrat-light";
+    src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: "dmsans-regular";
+    src: url("./assets/fonts/DMSans-Regular.ttf");
+}
+/*parragraph-title- style*/
+p{
+    font-family: "montserrat-light";
+    color: rgb(66, 56, 56);
+    font-weight: bolder;
+    padding: 10px;
+}
+h3{
+    font-size: 30px;
+    color: rgb(187, 90, 20);
+}
+/*images-style*/
+.imgPages{
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+/*body-style*/
+body{
+    background-color:rgb(255, 255, 255);
+    font-family: "dmsans-regular";
+    color: rgb(66, 56, 56);
+}
+/*nav-list-style*/
+.header__nav{
+    background-color: rgba(255, 255, 255, 0.397);
+    width: 100%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+}
+.header__nav ul li{
+    list-style: none;
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.header__nav ul li a{
+    text-decoration: none;
+    font-weight:bolder 100;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.logo{
+    width: 170px;
+    height: 61px;
+}
+/*HOME PAGE*/
+/*banner-style*/
+.banner{
+    background-image: url(.//assets/images/img-banner1.jpg);
+    width: auto;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+/*banner title*/
+.banner__title, .banner__title2{
+    font-family: "montserrat-light";
+    font-size: 120px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.664);
+    padding-top: 70px;
+    text-shadow: -1px -1px 1px rgba(170, 170, 170, 0),
+    0px 4px 1px rgba(0, 0, 0, 0.158),
+    4px 4px 5px rgba(0, 0, 0, 0.24),
+    0px 0px 7px rgba(0, 0, 0, 0.199);
+}
+.banner__title2{
+    font-size: 50px;
+}
+/*slide sections*/
+.slide{
+    padding-top: 70px;
+    margin: 20px;
+    padding: 20px;
+    display: flex
+}
+.slide__right{
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
+}
+.slide__left{
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+.slide__h3{
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgba(75, 175, 49, 0.74);
+}
+/*info sections*/
+section article h2, h2{
+    font-family: dmsans-regular;
+    color: rgb(18, 114, 61);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+.info__clients, .info__socialMedia, .info__medioambiente{
+    text-align: center;
+}
+
+.info__clients--h2, .info__socialMedia--h2{
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+/*TRABAJOS PAGE*/
+.services{
+    margin: 10px;
+    padding: 10px;
+}
+
+.services__articles{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*CURSOS PAGE*/
+.cursos, .horarios{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+ol h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+ol li{
+    list-style-position: inside;
+}
+.cursos__items> h3{
+    color: rgb(10, 94, 10);
+    border: 1px;
+    border-style: double;
+    border-color: black;
+}
+.cursos__items--img{
+    margin: 15px;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px;
+    padding: 30px;
+}
+.horarios> h3{
+    font-size:30px;
+    margin-bottom: 10px;
+    color: black;
+}
+/*NOSOTROS PAGE*/
+.nosotros__h2{
+    font-family: dmsans-regular;
+    color: rgb(18, 114, 61);
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+.nosotrosInfo{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.nosotrosInfo__article{
+    margin: 20px;
+    padding: 20px;
+}
+/*CONTACTO PAGE*/
+.contacto__info{
+    margin: 20px;
+    padding: 20px; 
+}
+/*footer*/
+#footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+}
