@@ -1,116 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-1x1.png">
-    <link rel="stylesheet" href="/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon-1x1.png"
+    />
+    <link rel="stylesheet" href="/estilos.css" />
+    <!-- Enlace a Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Enlace a FontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Garden Fields</title>
-</head>
-<!--body-->
-<body>
+  </head>
+  <!--body-->
+  <body>
     <header class="header">
-        <nav class="header__nav"> 
-            <a href="../index.html">
-                <img class="logo" src="../assets/images/logotype.png" alt="logo-gardenfields">
-            </a> 
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./trabajos.html">Trabajos</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>                
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+      <nav class="header__nav">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/images/logotype.png"
+            alt="logo-gardenfields"
+          />
+        </a>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./trabajos.html">Trabajos</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-<!--main sector-->
+    <!--main sector-->
     <main>
-        <div class="bannerPages">
-            <img src="../assets/images/banner-contacto.jpg" alt="banner-contacto" width="100%">
-        </div>
-        <section class="contacto">
-            <article>
-                <h2>COMPLETA EL FORMULARIO</h2>
-                <p>
-                    Nuestra pasion por el cuidado de espacios verde nos lleva a conocer en profundidad las necesidades de nuestros clientes, por eso queremos que nos cuentes cuales son tus intereses y nos pondremos en contacto a la brevedad para un asesoramiento personalizado.
-                </p>
-            </article>
-<!--formulario-->
-            <form action="procesar.php" name="contacto" method="post">
-                <fieldset>
-                    <legend>CONTACTANOS</legend>
-                    <p>
-                    <label>Nombre
-                        <input type="text" name="nombre" placeholder="nombre" required>
-                    </label>
-                    </p>
-                    <p>
-                    <label>Apellido
-                        <input type="text" name="apellido" placeholder="apellido" required>
-                    </label>
-                    </p>
-                    <p>
-                    <label>Email
-                        <input type="email" name="email" placeholder="usuario@email.com" required>
-                    </label>
-                    </p>
-                    <p>
-                    <label>Telefono
-                        <input type="tel" name="tel" placeholder="541122334455" required>
-                    </label>
-                    </p>
-                    <h4>Interes</h4>
-                    <select name="interes">
-                        <option value="jardineria integral">Jardineria Integral</option>
-                        <option value="jardin vertical">Jardin Vertical</option>
-                        <option value="mantenimiento">Mantenimiento</option>
-                        <option value="poda">Poda en Altura</option>
-                        <option value="cursos">Cursos</option>
-                    </select>
-                    <h4>Mensaje</h4>
-                    <textarea name="comentario" id="" cols="30" rows="5"></textarea>
-                    <p>
-                    <label for="newsletter">Desea recibir newsletter
-                        <input type="checkbox" name="newsletter" value="si">
-                    </label>
-                    </p>
-                    <p>
-                    <button type="submit">Enviar</button>
-                    </p>
-                    <p>
-                    <button type="reset">Borrar Formulario</button>
-                    </p>
-                </fieldset>
-            </form>
-        </section>
-<!--contact info-->
-        <section>
-            <article class="contacto__info">
-                <h3>DETALLES DE CONTACTO</h3>
-                <p>
-                    Calle falsa 123, Paseo Rodriguez, Buenos Aires CP:1000
-                </p>
-                <p>
-                    +541122445566
-                </p>
-                <P>
-                    gardenfields@group.com
-                </P>
-            </article>
-            <article class="contacto__info">
-                <h3>COMUNICATE CON NOSOTROS</h3>
-                <!--aca van iconos contacto-->
-            </article>
-            <article class="contacto__info">
-                <h3>VISITANOS EN NUESTRA SUCURSAL</h3>
-                <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av.%20Paseo%20Colon%20100,%20c1064%20CABA+(GardenFields)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a></iframe></div>
-            </article>
-        </section>
+      <div class="bannerPages">
+        <img
+          src="../assets/images/banner-contacto.jpg"
+          alt="banner-contacto"
+          width="100%"
+        />
+      </div>
+      <section class="contacto">
+        <article>
+          <h2>COMPLETA EL FORMULARIO</h2>
+          <p>
+            Nuestra pasion por el cuidado de espacios verde nos lleva a conocer
+            en profundidad las necesidades de nuestros clientes, por eso
+            queremos que nos cuentes cuales son tus intereses y nos pondremos en
+            contacto a la brevedad para un asesoramiento personalizado.
+          </p>
+        </article>
+        <!--formulario-->
+        <form action="procesar.php" name="contacto" method="post">
+          <fieldset>
+            <legend>CONTACTANOS</legend>
+            <p>
+              <label
+                >Nombre
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="nombre"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label
+                >Apellido
+                <input
+                  type="text"
+                  name="apellido"
+                  placeholder="apellido"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label
+                >Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="usuario@email.com"
+                  required
+                />
+              </label>
+            </p>
+            <p>
+              <label
+                >Telefono
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="541122334455"
+                  required
+                />
+              </label>
+            </p>
+            <h4>Interes</h4>
+            <select name="interes">
+              <option value="jardineria integral">Jardineria Integral</option>
+              <option value="jardin vertical">Jardin Vertical</option>
+              <option value="mantenimiento">Mantenimiento</option>
+              <option value="poda">Poda en Altura</option>
+              <option value="cursos">Cursos</option>
+            </select>
+            <h4>Mensaje</h4>
+            <textarea name="comentario" id="" cols="30" rows="5"></textarea>
+            <p>
+              <label for="newsletter"
+                >Desea recibir newsletter
+                <input type="checkbox" name="newsletter" value="si" />
+              </label>
+            </p>
+            <p>
+              <button type="submit">Enviar</button>
+            </p>
+            <p>
+              <button type="reset">Borrar Formulario</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+      <!--contact info-->
+      <section>
+        <article class="contacto__info">
+          <h3>DETALLES DE CONTACTO</h3>
+          <p>Calle falsa 123, Paseo Rodriguez, Buenos Aires CP:1000</p>
+          <p>+541122445566</p>
+          <p>gardenfields@group.com</p>
+        </article>
+        <article class="contacto__info">
+          <h3>COMUNICATE CON NOSOTROS</h3>
+          <!--aca van iconos contacto-->
+        </article>
+        <article class="contacto__info">
+          <h3>VISITANOS EN NUESTRA SUCURSAL</h3>
+          <div style="width: 100%">
+            <iframe
+              width="100%"
+              height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av.%20Paseo%20Colon%20100,%20c1064%20CABA+(GardenFields)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/car-satnav-gps/"
+                >GPS devices</a
+              ></iframe
+            >
+          </div>
+        </article>
+      </section>
     </main>
-<!--footer-->
-    <footer id="footer">
-        <h5>Copyright © 2022 LucasInk - Written by Lucas Projects</h5>
+    <!-- Footer -->
+    <footer class="bg-danger text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/?locale=es_LA"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://twitter.com/?lang=es"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-twitter"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca"
+            href="https://ar.linkedin.com/"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333"
+            href="https://github.com/"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright
+      </div>
+      <!-- Copyright -->
     </footer>
-</body>
+    <!-- Footer -->
+  </body>
 </html>
