@@ -1,0 +1,27 @@
+/* Estilo para el input de tipo file */
+input[type="file"] {
+  position: relative;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilo para el label del input file */
+label[for="image"] {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 0;
+}
+
+/* Estilo para cuando el input file está activo */
+input[type="file"]:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}

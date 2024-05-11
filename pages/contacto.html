@@ -11,6 +11,7 @@
       href="../assets/images/favicon-1x1.png"
     />
     <link rel="stylesheet" href="/estilos.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
     <!-- Enlace a Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -19,6 +20,11 @@
     <!-- Enlace a FontAwesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Enlace a Material Design Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/css/mdb.min.css"
       rel="stylesheet"
     />
     <title>Garden Fields</title>
@@ -52,119 +58,84 @@
           width="100%"
         />
       </div>
-      <section class="contacto">
-        <article>
-          <h2>COMPLETA EL FORMULARIO</h2>
-          <p>
-            Nuestra pasion por el cuidado de espacios verde nos lleva a conocer
-            en profundidad las necesidades de nuestros clientes, por eso
-            queremos que nos cuentes cuales son tus intereses y nos pondremos en
-            contacto a la brevedad para un asesoramiento personalizado.
-          </p>
-        </article>
-        <!--formulario-->
-        <form action="procesar.php" name="contacto" method="post">
-          <fieldset>
-            <legend>CONTACTANOS</legend>
-            <p>
-              <label
-                >Nombre
-                <input
-                  type="text"
-                  name="nombre"
-                  placeholder="nombre"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label
-                >Apellido
-                <input
-                  type="text"
-                  name="apellido"
-                  placeholder="apellido"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label
-                >Email
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="usuario@email.com"
-                  required
-                />
-              </label>
-            </p>
-            <p>
-              <label
-                >Telefono
-                <input
-                  type="tel"
-                  name="tel"
-                  placeholder="541122334455"
-                  required
-                />
-              </label>
-            </p>
-            <h4>Interes</h4>
-            <select name="interes">
-              <option value="jardineria integral">Jardineria Integral</option>
-              <option value="jardin vertical">Jardin Vertical</option>
-              <option value="mantenimiento">Mantenimiento</option>
-              <option value="poda">Poda en Altura</option>
-              <option value="cursos">Cursos</option>
-            </select>
-            <h4>Mensaje</h4>
-            <textarea name="comentario" id="" cols="30" rows="5"></textarea>
-            <p>
-              <label for="newsletter"
-                >Desea recibir newsletter
-                <input type="checkbox" name="newsletter" value="si" />
-              </label>
-            </p>
-            <p>
-              <button type="submit">Enviar</button>
-            </p>
-            <p>
-              <button type="reset">Borrar Formulario</button>
-            </p>
-          </fieldset>
-        </form>
-      </section>
-      <!--contact info-->
-      <section>
-        <article class="contacto__info">
-          <h3>DETALLES DE CONTACTO</h3>
-          <p>Calle falsa 123, Paseo Rodriguez, Buenos Aires CP:1000</p>
-          <p>+541122445566</p>
-          <p>gardenfields@group.com</p>
-        </article>
-        <article class="contacto__info">
-          <h3>COMUNICATE CON NOSOTROS</h3>
-          <!--aca van iconos contacto-->
-        </article>
-        <article class="contacto__info">
-          <h3>VISITANOS EN NUESTRA SUCURSAL</h3>
-          <div style="width: 100%">
-            <iframe
-              width="100%"
-              height="300"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av.%20Paseo%20Colon%20100,%20c1064%20CABA+(GardenFields)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ><a href="https://www.gps.ie/car-satnav-gps/"
-                >GPS devices</a
-              ></iframe
-            >
+      <div class="contact-info">
+        <div>
+          <h1>Complete el Formulario</h1>
+        </div>
+        <div>
+          <p>Descripcion de los que se presenta</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form style="width: 30rem">
+          <!-- Name input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="name" class="form-control" required />
+            <label class="form-label" for="name">Nombre</label>
           </div>
-        </article>
-      </section>
+          <!-- Surname input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="surname" class="form-control" required />
+            <label class="form-label" for="surnmame">Apellido</label>
+          </div>
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" required />
+            <label class="form-label" for="email">Email</label>
+          </div>
+
+          <!-- Message input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <textarea class="form-control" id="comment" rows="4"></textarea>
+            <label class="form-label" for="comment">Comentario</label>
+          </div>
+
+          <!-- Select -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <select class="form-select" id="prenda" required>
+              <option value="" disabled selected>Selecciona una prenda</option>
+              <option value="remera">Remera</option>
+              <option value="buzo">Buzo</option>
+              <option value="pantalon">Pantalón</option>
+              <option value="shorts">Shorts</option>
+            </select>
+          </div>
+
+          <!-- File Image -->
+          <div class="mb-4">
+            <label for="image" class="form-label">Subir Imagen</label>
+            <input
+              type="file"
+              id="image"
+              class="form-control"
+              accept=".jpg, .jpeg, .png"
+            />
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input
+              class="form-check-input me-2"
+              type="checkbox"
+              value=""
+              id="copy"
+            />
+            <label class="form-check-label" for="copy">
+              Enviar copia del formulario al email
+            </label>
+          </div>
+
+          <!-- Submit button -->
+          <button
+            data-mdb-ripple-init
+            type="button"
+            class="btn btn-primary btn-block mb-4"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="bg-danger text-center text-white">
@@ -232,5 +203,7 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <!-- MDB -->
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/js/mdb.min.js"></script>
   </body>
 </html>
