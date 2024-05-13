@@ -1,1 +1,67 @@
+.titlePrendas {
+  color: #f08080;
+}
 
+/* Estilos para las prendas */
+.list-prendas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prenda {
+  position: relative;
+  border: 2px solid #f08080;
+  border-radius: 8px;
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para las imágenes de las prendas */
+.prenda img {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #e2d7d7;
+}
+
+/* Estilos para la información de las prendas */
+.prenda p {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #d9cece;
+}
+
+/* Estilos para el botón Agregar */
+.prenda button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #c82333; /* Rojo oscuro */
+  color: #fff; /* Texto blanco */
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prenda button:hover {
+  background-color: #9c1c2b; /* Rojo más oscuro al pasar el mouse */
+}
+
+.prenda:hover {
+  background-color: #f9c2c2;
+  transition: background-color 0.5s;
+}
+
+.prenda p:nth-of-type(8) {
+  font-size: 0.5em; /* Puedes ajustar el valor según lo necesites */
+}
