@@ -1,6 +1,6 @@
 .titlePrendas {
   color: #f08080;
-  border-bottom: 1px solid #f08080;
+  border-bottom: 1px dotted #f08080;
 }
 
 select.form-select:hover {

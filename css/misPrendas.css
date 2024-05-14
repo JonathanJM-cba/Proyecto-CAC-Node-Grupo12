@@ -1,0 +1,27 @@
+.title-misPrendas {
+  color: #f08080;
+  border-bottom: 1px dotted #f08080;
+}
+
+.search-misPrendas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+select {
+  height: 36px;
+}
+
+input.no-spinner::-webkit-inner-spin-button,
+input.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.no-spinner {
+  -moz-appearance: textfield;
+}
