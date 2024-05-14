@@ -1,5 +1,10 @@
 .titlePrendas {
   color: #f08080;
+  border-bottom: 1px solid #f08080;
+}
+
+select.form-select:hover {
+  cursor: pointer;
 }
 
 /* Estilos para las prendas */
@@ -7,6 +12,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.searchPrenda {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 .prenda {

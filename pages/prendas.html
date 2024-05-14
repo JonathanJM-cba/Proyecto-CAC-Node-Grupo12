@@ -37,13 +37,13 @@
           <img
             class="logo"
             src="../assets/images/logo4-tiendaRopa-removebg.png"
-            alt="logo-gardenfields"
+            alt="logo-modaplus"
           />
         </a>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./prendas.html">Prendas</a></li>
-          <li><a href="./cursos.html">MisPrendas</a></li>
+          <li><a href="./misPrendas.html">MisPrendas</a></li>
           <li><a href="./nosotros.html">Nosotros</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
@@ -64,22 +64,24 @@
       </div>
       <!--AGREGAR EL INPUT PARA REALZIAR BUSQUEDA-->
       <section class="section-search">
-        <div class="searchPrenda">
-          <div data-mdb-input-init class="form-outline mb-4">
-            <select class="form-select" id="prenda" required>
-              <option value="" disabled selected>Selecciona una prenda</option>
+        <form style="width: 30rem">
+          <div class="searchPrenda">
+            <select class="form-select" id="prenda">
+              <option value="" disabled selected>
+                Seleccione una categoría
+              </option>
               <option value="remera">Remera</option>
               <option value="buzo">Buzo</option>
               <option value="pantalon">Pantalón</option>
               <option value="shorts">Shorts</option>
             </select>
+            <button type="button" class="btn btn-primary">Buscar</button>
           </div>
-          <button type="button" class="btn btn-primary">Buscar</button>
-        </div>
+        </form>
       </section>
       <section class="section-list">
         <div class="list-prendas">
-          <!--AGREGAR SCRIPT MAP-->
+          <!--AGREGAR SCRIPT MAP o ForEach-->
         </div>
       </section>
     </main>
