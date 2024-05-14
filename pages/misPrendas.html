@@ -21,6 +21,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Enlace a Material Design Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
     <title>Tienda ModaPlus+</title>
   </head>
   <!--body-->
@@ -57,7 +62,43 @@
       <h2 class="title-misPrendas">GESTIONA TUS PRENDAS</h2>
       <section class="seccion-search-misPrendas">
         <form style="width: 30rem">
-          <!--AGREGAR LOS INPUT-->
+          <div class="search-misPrendas">
+            <!-- Id input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="number" id="id" class="form-control" />
+              <label class="form-label" for="id">Id</label>
+            </div>
+            <!-- Precio input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="number" id="precio" class="form-control" />
+              <label class="form-label" for="precio">Precio</label>
+            </div>
+            <!-- Stock input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="number" id="stock" class="form-control" />
+              <label class="form-label" for="stock">Stock</label>
+            </div>
+            <!-- Select -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <select class="form-select" id="prenda" required>
+                <option value="" disabled selected>
+                  Selecciona una prenda
+                </option>
+                <option value="remera">Remera</option>
+                <option value="buzo">Buzo</option>
+                <option value="pantalon">Pantalón</option>
+                <option value="shorts">Shorts</option>
+              </select>
+            </div>
+            <!-- Submit button -->
+            <button
+              data-mdb-ripple-init
+              type="button"
+              class="btn btn-primary mb-2"
+            >
+              Buscar
+            </button>
+          </div>
         </form>
       </section>
       <section class="seccion-misPrendas">
@@ -132,5 +173,8 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <script src="../js/tablaMisPrendas.js"></script>
+    <!-- MDB -->
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/js/mdb.min.js"></script>
   </body>
 </html>
