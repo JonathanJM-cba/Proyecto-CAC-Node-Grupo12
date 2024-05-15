@@ -57,3 +57,15 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+.contact-info-description {
+  border: 2px dotted #9c1c2b;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.contact-info-description:hover {
+  background-color: #f08080;
+  transition: background-color 0.5s;
+}
