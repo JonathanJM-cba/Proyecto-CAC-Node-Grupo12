@@ -61,11 +61,18 @@
       </div>
       <div class="contact-info">
         <div>
-          <h1>Complete el Formulario</h1>
+          <h2 class="title-contacto">COMPLETE EL FORMULARIO</h2>
         </div>
         <div>
-          <p>Descripcion de los que se presenta</p>
+          <img
+            class="logo"
+            src="../assets/images/logo4-tiendaRopa-removebg-transformed.png"
+            alt="logo-modaplus"
+          />
         </div>
+      </div>
+      <div class="contact-info-description">
+        <p>Describir cual es el objetivo del formulario</p>
       </div>
       <div class="contact-form">
         <form style="width: 30rem">
@@ -80,9 +87,21 @@
             <label class="form-label" for="surnmame">Apellido</label>
           </div>
 
+          <!-- Telephone input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="number" id="telefono" class="form-control" required />
+            <label class="form-label" for="telefono">Télefono</label>
+          </div>
+
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
-            <input type="email" id="email" class="form-control" required />
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
             <label class="form-label" for="email">Email</label>
           </div>
 

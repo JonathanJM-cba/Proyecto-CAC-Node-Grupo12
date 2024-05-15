@@ -25,3 +25,35 @@ input[type="file"]:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
+
+.title-contacto {
+  color: #f08080;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px dotted #f08080;
+}
+
+/*Animaciones*/
+.contact-info img {
+  transition: transform 0.3s ease;
+}
+
+.contact-info img:hover {
+  transform: rotate(5deg);
+}
+
+/* Ocultar las flechas en los inputs de tipo number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
