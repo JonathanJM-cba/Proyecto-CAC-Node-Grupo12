@@ -305,7 +305,7 @@ prendas.forEach((prenda) => {
   divPrenda.appendChild(ubicacion);
 
   const btnAgregar = document.createElement("button");
-  btnAgregar.textContent = "Agregar";
+  btnAgregar.textContent = "AGREGAR";
   btnAgregar.addEventListener("click", () => {
     // Lógica para agregar la prenda al carrito
     console.log(`Agregando ${prenda.descripcion} al carrito`);

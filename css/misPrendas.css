@@ -25,3 +25,15 @@ input.no-spinner::-webkit-outer-spin-button {
 input.no-spinner {
   -moz-appearance: textfield;
 }
+
+.table-hover tbody tr:hover {
+  background-color: #93a8e3;
+}
+
+thead {
+  background-color: #cd5c5c;
+}
+
+table {
+  margin: 0 10px;
+}

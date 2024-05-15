@@ -137,16 +137,23 @@ const divTabla = document.querySelector(".table-prenda");
 
 // Se crea la tabla
 const tabla = document.createElement("table");
-tabla.classList.add("table");
+tabla.classList.add(
+  "table",
+  "table-hover",
+  "table-bordered",
+  "border-danger-subtle"
+);
 
 //Encabezado
 const encabezado = document.createElement("thead");
+encabezado.classList.add("text-center", "encabezado");
 const encabezadoFila = document.createElement("tr");
 encabezado.innerHTML = `
   <th>ID</th>
-  <th>Categoría</th>
-  <th>Precio</th>
-  <th>Stock</th>
+  <th>CATEGORÍA</th>
+  <th>PRECIO</th>
+  <th>STOCK</th>
+  <th>ACCIONES</th>
 `;
 encabezado.appendChild(encabezadoFila);
 
@@ -160,6 +167,17 @@ misPrendas.forEach((prenda) => {
     <td>${prenda.categoria}</td>
     <td>${prenda.precio}</td>
     <td>${prenda.stock}</td>
+    <td class="text-center">
+      <button type="button" class="btn btn-info btn-sm" title="Consultar">
+        <i class="fas fa-eye"></i>
+      </button>
+      <button type="button" class="btn btn-warning btn-sm" title="Modificar">
+        <i class="fas fa-edit"></i>
+      </button>
+      <button type="button" class="btn btn-danger btn-sm" title="Eliminar">
+        <i class="fas fa-trash"></i>
+      </button>
+    </td>
   `;
   cuerpoTabla.appendChild(fila);
 });
