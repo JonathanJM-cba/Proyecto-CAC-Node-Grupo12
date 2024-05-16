@@ -1,0 +1,263 @@
+/* Estilos del contenedor */
+.container {
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  padding-right: 0; /* Elimina el padding derecho */
+  padding-left: 0; /* Elimina el padding izquierdo */
+  margin: 20px auto;
+}
+
+/* Estilos de las secciones */
+.hero,
+.favorites,
+.donate,
+.about {
+  padding: 30px; /* Ajusta el padding para que las secciones tengan espacio */
+}
+/* Estilos de la sección hero */
+
+.hero {
+  background-color: #ef5350; /* Rojo */
+  color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out; /* fadeInDown animación */
+}
+
+.hero p {
+  font-size: 1.2em;
+  animation: slideInUp 1s ease-out 0.5s; /* slideInUp animación */
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff5722; /* Naranja */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: bounceIn 1s ease-out 1s; /* bounceIn animación */
+}
+
+.hero a:hover {
+  background-color: #e64a19; /* Naranja más oscuro */
+}
+
+/* Estilos de la sección donate */
+.donate {
+  background-color: #ffc107; /* Amarillo */
+  color: #333;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+}
+
+.donate h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.donate p {
+  font-size: 1.1em;
+  animation: slideInRight 1s ease-out 0.5s; /* slideInRight animación */
+}
+
+.donate a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff9800; /* Naranja */
+  border: 2px solid #ff9800; /* Naranja */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  animation: fadeInRight 1s ease-out 1s; /* fadeInRight animación */
+}
+
+.donate a:hover {
+  background-color: #ff9800; /* Naranja */
+  color: #fff;
+}
+
+/* Estilos de la sección favorites */
+.favorites {
+  background-color: #ffeb3b; /* Amarillo claro */
+  color: #333;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+}
+
+.favorites h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.favorites p,
+.favorites ul {
+  font-size: 1.1em;
+  animation: slideInLeft 1s ease-out 0.5s; /* slideInLeft animación */
+}
+
+.favorites ul {
+  padding-left: 20px;
+}
+
+.favorites ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilos de la sección about */
+.about {
+  background-color: #ffeb3b; /* Amarillo claro */
+  color: #333;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.1em;
+  animation: slideInLeft 1s ease-out 0.5s; /* slideInLeft animación */
+}
+
+/* Keyframes de las animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animaciones de AOS */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Ajustes adicionales para AOS */
+[data-aos="fade-up"] {
+  transform: translateY(20px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-in"] {
+  transform: translateY(20px);
+}
+
+[data-aos="fade-in"].aos-animate {
+  transform: translateY(0);
+}

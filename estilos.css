@@ -91,50 +91,6 @@ body {
 .banner__title2 {
   font-size: 50px;
 }
-/*slide sections*/
-.slide {
-  padding-top: 70px;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-}
-.slide__right {
-  text-align: right;
-  padding: 5px;
-  margin: 5px;
-}
-.slide__left {
-  text-align: left;
-  padding: 5px;
-  margin: 5px;
-}
-.slide__h3 {
-  font-size: 20px;
-  text-decoration: underline;
-  color: rgba(75, 175, 49, 0.74);
-}
-/*info sections*/
-section article h2,
-h2 {
-  font-family: dmsans-regular;
-  color: rgb(18, 114, 61);
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 20px;
-}
-.info__clients,
-.info__socialMedia,
-.info__medioambiente {
-  text-align: center;
-}
-
-.info__clients--h2,
-.info__socialMedia--h2 {
-  font-size: 30px;
-  margin: 20px;
-  padding: 20px;
-}
 
 form {
   width: 30rem;
