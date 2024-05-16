@@ -82,22 +82,28 @@
         </p>
       </div>
       <div class="contact-form">
-        <form style="width: 30rem">
+        <form style="width: 30rem" class="needs-validation" novalidate>
           <!-- Name input -->
-          <div data-mdb-input-init class="form-outline mb-4">
+          <div data-mdb-validate="name" class="form-outline mb-4">
             <input type="text" id="name" class="form-control" required />
             <label class="form-label" for="name">Nombre</label>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Complete el campo Nombre</div>
           </div>
           <!-- Surname input -->
           <div data-mdb-input-init class="form-outline mb-4">
             <input type="text" id="surname" class="form-control" required />
             <label class="form-label" for="surnmame">Apellido</label>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Complete el campo Apellido</div>
           </div>
 
           <!-- Telephone input -->
           <div data-mdb-input-init class="form-outline mb-4">
             <input type="number" id="telefono" class="form-control" required />
             <label class="form-label" for="telefono">Télefono</label>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Complete el campo Télefono</div>
           </div>
 
           <!-- Email input -->
@@ -110,6 +116,8 @@
               autocomplete="off"
             />
             <label class="form-label" for="email">Email</label>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Complete el campo Email</div>
           </div>
 
           <!-- Message input -->
@@ -127,6 +135,8 @@
               <option value="pantalon">Pantalón</option>
               <option value="shorts">Shorts</option>
             </select>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Debe seleccionar una categoría</div>
           </div>
 
           <!-- File Image -->
@@ -147,16 +157,19 @@
               type="checkbox"
               value=""
               id="copy"
+              required
             />
             <label class="form-check-label" for="copy">
               Enviar copia del formulario al email
             </label>
+            <div class="valid-feedback">Ok!</div>
+            <div class="invalid-feedback">Debe hacer click en el checkbox</div>
           </div>
 
           <!-- Submit button -->
           <button
             data-mdb-ripple-init
-            type="button"
+            type="submit"
             class="btn btn-primary btn-block mb-4"
           >
             Enviar
@@ -230,6 +243,7 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <script src="../js/validacionFormContacto.js"></script>
     <!-- MDB -->
     <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.9.0/js/mdb.min.js"></script>
   </body>

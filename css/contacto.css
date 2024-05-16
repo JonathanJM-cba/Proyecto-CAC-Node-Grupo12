@@ -74,3 +74,13 @@ input[type="number"] {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Estilos para campos inválidos */
+.is-invalid {
+  border-color: #dc3545 !important; /* Color de borde rojo */
+}
+
+/* Estilos para campos válidos */
+.is-valid {
+  border-color: #28a745 !important; /* Color de borde verde */
+}
