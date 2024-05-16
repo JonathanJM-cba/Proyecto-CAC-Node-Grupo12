@@ -136,25 +136,6 @@ h2 {
   padding: 20px;
 }
 
-/*NOSOTROS PAGE*/
-.nosotros__h2 {
-  font-family: dmsans-regular;
-  color: rgb(18, 114, 61);
-  text-align: left;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 20px;
-}
-.nosotrosInfo {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-.nosotrosInfo__article {
-  margin: 20px;
-  padding: 20px;
-}
-
 form {
   width: 30rem;
   margin: 0 auto;
