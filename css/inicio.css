@@ -1,8 +1,8 @@
 /* Estilos del contenedor */
 .container {
-  width: 100%; /* Ocupa el 100% del ancho disponible */
-  padding-right: 0; /* Elimina el padding derecho */
-  padding-left: 0; /* Elimina el padding izquierdo */
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
   margin: 20px auto;
 }
 
@@ -11,7 +11,7 @@
 .favorites,
 .donate,
 .about {
-  padding: 30px; /* Ajusta el padding para que las secciones tengan espacio */
+  padding: 30px;
 }
 /* Estilos de la sección hero */
 
@@ -25,38 +25,38 @@
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  animation: fadeInDown 1s ease-out; /* fadeInDown animación */
+  animation: fadeInDown 1s ease-out;
 }
 
 .hero p {
   font-size: 1.2em;
-  animation: slideInUp 1s ease-out 0.5s; /* slideInUp animación */
+  animation: slideInUp 1s ease-out 0.5s;
 }
 
 .hero a {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ff5722; /* Naranja */
+  background-color: #ff5722;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  animation: bounceIn 1s ease-out 1s; /* bounceIn animación */
+  animation: bounceIn 1s ease-out 1s;
 }
 
 .hero a:hover {
-  background-color: #e64a19; /* Naranja más oscuro */
+  background-color: #e64a19;
 }
 
 /* Estilos de la sección donate */
 .donate {
-  background-color: #ffc107; /* Amarillo */
+  background-color: #ffc107;
   color: #333;
   padding: 30px;
   margin-top: 20px;
   border-radius: 10px;
-  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+  animation: fadeInUp 1s ease-out;
 }
 
 .donate h2 {
@@ -66,7 +66,7 @@
 
 .donate p {
   font-size: 1.1em;
-  animation: slideInRight 1s ease-out 0.5s; /* slideInRight animación */
+  animation: slideInRight 1s ease-out 0.5s;
 }
 
 .donate a {
@@ -74,27 +74,27 @@
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent;
-  color: #ff9800; /* Naranja */
-  border: 2px solid #ff9800; /* Naranja */
+  color: #ff9800;
+  border: 2px solid #ff9800;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  animation: fadeInRight 1s ease-out 1s; /* fadeInRight animación */
+  animation: fadeInRight 1s ease-out 1s;
 }
 
 .donate a:hover {
-  background-color: #ff9800; /* Naranja */
+  background-color: #ff9800;
   color: #fff;
 }
 
 /* Estilos de la sección favorites */
 .favorites {
-  background-color: #ffeb3b; /* Amarillo claro */
+  background-color: #ffeb3b;
   color: #333;
   padding: 30px;
   margin-top: 20px;
   border-radius: 10px;
-  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+  animation: fadeInUp 1s ease-out;
 }
 
 .favorites h2 {
@@ -105,7 +105,7 @@
 .favorites p,
 .favorites ul {
   font-size: 1.1em;
-  animation: slideInLeft 1s ease-out 0.5s; /* slideInLeft animación */
+  animation: slideInLeft 1s ease-out 0.5s;
 }
 
 .favorites ul {
@@ -118,12 +118,12 @@
 
 /* Estilos de la sección about */
 .about {
-  background-color: #ffeb3b; /* Amarillo claro */
+  background-color: #ffeb3b;
   color: #333;
   padding: 30px;
   margin-top: 20px;
   border-radius: 10px;
-  animation: fadeInUp 1s ease-out; /* fadeInUp animación */
+  animation: fadeInUp 1s ease-out;
 }
 
 .about h2 {
@@ -133,7 +133,7 @@
 
 .about p {
   font-size: 1.1em;
-  animation: slideInLeft 1s ease-out 0.5s; /* slideInLeft animación */
+  animation: slideInLeft 1s ease-out 0.5s;
 }
 
 /* Keyframes de las animaciones */
