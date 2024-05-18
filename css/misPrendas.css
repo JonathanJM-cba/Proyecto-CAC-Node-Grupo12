@@ -1,6 +1,10 @@
-.title-misPrendas {
-  color: #f08080;
+.content-titleMisPrendas {
   border-bottom: 1px dotted #f08080;
+  height: 61.8px;
+}
+
+.content-titleMisPrendas h2 {
+  color: #f08080;
 }
 
 .search-misPrendas {

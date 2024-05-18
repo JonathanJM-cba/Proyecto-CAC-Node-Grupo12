@@ -179,7 +179,7 @@ const prendas = [
     id: 17,
     categoria: "pantalon",
     precio: 52700,
-    img: "https://www.puntosport.com.ar/17995-large_default/pantalon-salomn-hombre-algodon-swop-graphic-pant-ii-verde-camo-print-17215.jpg",
+    img: "https://acdn.mitiendanube.com/stores/002/292/081/products/11-7a28caaafca2b69f3d17017790821227-480-0.jpg",
     talla: "S",
     descripcion: "Pantalón verde militar de algodón",
     stock: 10,
