@@ -36,6 +36,7 @@ input[type="file"]:focus {
   justify-content: center;
   gap: 5px;
   border-bottom: 1px dotted #f08080;
+  margin-top: 10px;
 }
 
 /*Animaciones*/

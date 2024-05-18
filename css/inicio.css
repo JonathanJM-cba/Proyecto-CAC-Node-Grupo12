@@ -13,13 +13,35 @@
 .about {
   padding: 30px;
 }
+
+.content-inicio {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px dotted #f08080;
+  height: 61.8px;
+  margin-top: 10px;
+}
+
+.content-inicio h1 {
+  color: #f08080;
+}
+
+/* Estilos de logo */
+.logo-title {
+  width: 170px;
+  height: 61px;
+  animation: slideIn 2s ease-out forwards;
+}
+
 /* Estilos de la sección hero */
 
 .hero {
-  background-color: #ef5350; /* Rojo */
+  background-color: #f5b7b1;
   color: #fff;
   padding: 50px;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
+  border-radius: 50px;
 }
 
 .hero h1 {
@@ -37,7 +59,7 @@
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ff5722;
+  background-color: #f14a4a;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -46,16 +68,16 @@
 }
 
 .hero a:hover {
-  background-color: #e64a19;
+  background-color: #f01f1f;
 }
 
 /* Estilos de la sección donate */
 .donate {
-  background-color: #ffc107;
+  background-color: #f5b7b1;
   color: #333;
   padding: 30px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -74,8 +96,8 @@
   margin-top: 20px;
   padding: 10px 20px;
   background-color: transparent;
-  color: #ff9800;
-  border: 2px solid #ff9800;
+  color: #f33c3c;
+  border: 2px solid #f33c3c;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -83,17 +105,17 @@
 }
 
 .donate a:hover {
-  background-color: #ff9800;
+  background-color: #ec2c2c;
   color: #fff;
 }
 
 /* Estilos de la sección favorites */
 .favorites {
-  background-color: #ffeb3b;
+  background-color: #f7be67;
   color: #333;
   padding: 30px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -118,11 +140,11 @@
 
 /* Estilos de la sección about */
 .about {
-  background-color: #ffeb3b;
+  background-color: #f5b94a;
   color: #333;
   padding: 30px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   animation: fadeInUp 1s ease-out;
 }
 
@@ -137,6 +159,33 @@
 }
 
 /* Keyframes de las animaciones */
+
+/* Para las imagenes */
+/* Animación de deslizamiento desde la izquierda */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animación de deslizamiento desde la derecha */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Aplicar la animación de deslizamiento desde la derecha a la tercera imagen */
+.content-inicio div:nth-child(3) .logo-title {
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
