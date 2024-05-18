@@ -78,3 +78,19 @@ select.form-select:hover {
 .prenda p:nth-of-type(8) {
   font-size: 0.5em;
 }
+
+/* Media query para tablets */
+/* 2 Columnas por prenda */
+@media screen and (max-width: 1024px) {
+  .prenda {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Media query para dispositivos móviles */
+/* 1 Columna por prenda */
+@media screen and (max-width: 768px) {
+  .prenda {
+    width: calc(100% - 20px);
+  }
+}
