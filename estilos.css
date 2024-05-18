@@ -123,3 +123,35 @@ form {
   width: 100%;
   z-index: 1000;
 }
+
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Estilos generales responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  .header__nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
