@@ -133,7 +133,7 @@ const misPrendas = [
   },
 ];
 
-const divTabla = document.querySelector(".table-prenda");
+const divTabla = document.querySelector(".table-responsive");
 
 // Se crea la tabla
 const tabla = document.createElement("table");

@@ -10,15 +10,38 @@
 .search-misPrendas {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
   align-items: flex-start;
   margin: 15px 0;
   flex-wrap: wrap;
 }
 
+.from-misPrendas {
+  box-sizing: border-box;
+}
+
 select {
   height: 36px;
+}
+
+.seccion-misPrendas {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-responsive table {
+  width: 100%;
+}
+
+.table {
+  margin: 0;
 }
 
 input.no-spinner::-webkit-inner-spin-button,
@@ -40,4 +63,59 @@ thead {
 
 table {
   margin: 0 10px;
+  overflow-x: auto;
+}
+
+/* Media Queries */
+/* Tablet */
+@media (max-width: 1150px) {
+  .seccion-search-misPrendas form {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .search-misPrendas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-misPrendas .form-outline {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button-search-misprendas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .button-search-misprendas .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Moviles */
+@media (max-width: 768px) {
+  .seccion-search-misPrendas form {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .search-misPrendas .form-outline {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+  }
+
+  .search-misPrendas {
+    padding: 0 10px;
+  }
+
+  .search-misPrendas .form-outline,
+  .button-search-misprendas .btn {
+    width: 100%;
+  }
 }
