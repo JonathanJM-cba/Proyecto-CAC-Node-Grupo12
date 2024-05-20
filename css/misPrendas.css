@@ -17,8 +17,11 @@
   flex-wrap: wrap;
 }
 
-.from-misPrendas {
+.form-misPrendas {
+  width: 100%;
+  max-width: 70rem;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 select {
@@ -69,19 +72,69 @@ table {
 /* Media Queries */
 /* Tablet */
 @media (max-width: 1150px) {
-  .seccion-search-misPrendas form {
+  .seccion-search-misPrendas {
+    margin: 10px auto;
+  }
+
+  .form-misPrendas {
     padding: 0 10px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .search-misPrendas {
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
   }
 
   .search-misPrendas .form-outline {
     width: 100%;
+    max-width: 400px; /* Ancho máximo para los inputs */
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button-search-misprendas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .form-misPrendas {
+    padding: 0 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-misPrendas {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .search-misPrendas .form-outline {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .button-search-misprendas {
@@ -93,29 +146,80 @@ table {
 
   .button-search-misprendas .btn {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
+  }
+
+  /* Ajustando tabla para movil */
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table th:nth-child(1),
+  .table td:nth-child(1) {
+    /* ID column */
+    width: 5%;
+    min-width: 15px; /* Ensures minimum visibility */
+  }
+
+  .table th:nth-child(2),
+  .table td:nth-child(2) {
+    /* Categoría column */
+    width: 10%;
+    min-width: 20px; /* Ensures minimum visibility */
+  }
+
+  .table th:nth-child(3),
+  .table td:nth-child(3) {
+    /* Precio column */
+    width: 10%;
+    min-width: 40px; /* Ensures minimum visibility */
+  }
+
+  .table th:nth-child(4),
+  .table td:nth-child(4) {
+    /* Stock column */
+    width: 5%;
+    min-width: 15px; /* Ensures minimum visibility */
+  }
+
+  .table th:nth-child(5),
+  .table td:nth-child(5) {
+    /* Acciones column */
+    width: 47%;
+    min-width: 100px; /* Ensures minimum visibility */
+  }
+
+  .table .btn {
+    padding: 2px 5px;
+    font-size: 0.8rem; /* Reduce the font size of the buttons */
+  }
+
+  .table .btn i {
+    font-size: 0.8rem; /* Reduce the size of the icons */
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem; /* Reduce font size for table cells */
+  }
+
+  .table th {
+    font-size: 0.8rem; /* Reduce font size for table headers */
   }
 }
 
-/* Moviles */
-@media (max-width: 768px) {
-  .seccion-search-misPrendas form {
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
+@media (max-width: 550px) {
+  .table td:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .search-misPrendas .form-outline {
-    width: calc(50% - 10px);
-    margin-right: 10px;
+  .table .btn {
+    margin-bottom: 5px;
   }
 
-  .search-misPrendas {
-    padding: 0 10px;
-  }
-
-  .search-misPrendas .form-outline,
-  .button-search-misprendas .btn {
-    width: 100%;
+  .table .btn:last-child {
+    margin-bottom: 0;
   }
 }
