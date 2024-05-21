@@ -1,4 +1,3 @@
-/* Estilo para el input de tipo file */
 input[type="file"] {
   position: relative;
   width: 100%;
@@ -12,14 +11,12 @@ input[type="file"] {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* Estilo para el label del input file */
 label[for="image"] {
   font-size: 1rem;
   color: #495057;
   margin-bottom: 0;
 }
 
-/* Estilo para cuando el input file está activo */
 input[type="file"]:focus {
   border-color: #86b7fe;
   outline: 0;
@@ -85,3 +82,5 @@ input[type="number"] {
 .is-valid {
   border-color: #28a745 !important; /* Color de borde verde */
 }
+
+/* No requiere de css adicional para dispositivos como tablets o moviles */
