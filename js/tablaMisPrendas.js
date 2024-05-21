@@ -168,13 +168,13 @@ misPrendas.forEach((prenda) => {
     <td>${prenda.precio}</td>
     <td>${prenda.stock}</td>
     <td class="text-center">
-      <button type="button" class="btn btn-info btn-sm" title="Consultar">
+      <button type="button" class="btn btn-info btn-sm btn-consultar" title="Consultar">
         <i class="fas fa-eye"></i>
       </button>
-      <button type="button" class="btn btn-warning btn-sm" title="Modificar">
+      <button type="button" class="btn btn-warning btn-sm btn-modificar" title="Modificar">
         <i class="fas fa-edit"></i>
       </button>
-      <button type="button" class="btn btn-danger btn-sm" title="Eliminar">
+      <button type="button" class="btn btn-danger btn-sm btn-eliminar" title="Eliminar">
         <i class="fas fa-trash"></i>
       </button>
     </td>
@@ -188,3 +188,21 @@ tabla.appendChild(cuerpoTabla);
 
 // Agregar la tabla al div
 divTabla.appendChild(tabla);
+
+const botonesAccion = document.querySelectorAll(
+  ".btn-consultar, .btn-modificar, .btn-eliminar"
+);
+
+botonesAccion.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    alert("¡Esta funcionalidad estará disponible en un futuro cercano!");
+  });
+});
+
+const botonBuscar = document.getElementById("buscarBtn");
+
+botonBuscar.addEventListener("click", () => {
+  alert(
+    "¡La funcionalidad de búsqueda estará disponible en un futuro cercano!"
+  );
+});

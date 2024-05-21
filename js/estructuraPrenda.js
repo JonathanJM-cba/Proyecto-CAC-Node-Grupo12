@@ -309,6 +309,7 @@ prendas.forEach((prenda) => {
   btnAgregar.addEventListener("click", () => {
     // Lógica para agregar la prenda al carrito
     console.log(`Agregando ${prenda.descripcion} al carrito`);
+    alert("Esta funcionalidad estará disponible en un futuro cercano! :(");
   });
   divPrenda.appendChild(btnAgregar);
 
