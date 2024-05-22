@@ -158,6 +158,19 @@
   animation: slideInLeft 1s ease-out 0.5s;
 }
 
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  margin-bottom: 10px;
+}
+
+.user-item i {
+  margin-right: 5px;
+}
+
 /* Keyframes de las animaciones */
 
 /* Para las imagenes */
