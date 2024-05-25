@@ -94,3 +94,23 @@ select.form-select:hover {
     width: calc(100% - 20px);
   }
 }
+
+@media (max-width: 500px) {
+  .searchPrenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .form-search-prenda {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .searchPrenda select.form-select,
+  .searchPrenda button.btn {
+    width: 100%;
+  }
+}
