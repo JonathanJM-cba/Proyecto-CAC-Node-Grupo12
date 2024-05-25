@@ -155,3 +155,13 @@ form {
     display: flex;
   }
 }
+
+/* Ajustes de títulos en pantallas pequeñas de celulares */
+@media (max-width: 500px) {
+  .banner__title {
+    font-size: 60px;
+  }
+  .banner__title2 {
+    font-size: 25px;
+  }
+}
