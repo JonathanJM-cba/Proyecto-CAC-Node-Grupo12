@@ -83,4 +83,10 @@ input[type="number"] {
   border-color: #28a745 !important; /* Color de borde verde */
 }
 
-/* No requiere de css adicional para dispositivos como tablets o moviles */
+@media (max-width: 500px) {
+  .contact-form form {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
