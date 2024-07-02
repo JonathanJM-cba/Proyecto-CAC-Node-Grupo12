@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const { dbConnectionMySql } = require("./config/mysql");
 require("dotenv").config();
 
 const app = express();
@@ -18,3 +19,5 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Servirdor escuchando en: http://localhost:${port}`);
 });
+
+dbConnectionMySql();
