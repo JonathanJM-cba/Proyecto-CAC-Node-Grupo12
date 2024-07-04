@@ -2,6 +2,7 @@
 
 const models = {
   categoriaModel: require("./mysql/categoria"),
+  prendaModel: require("./mysql/prenda"),
 };
 
 module.exports = models;

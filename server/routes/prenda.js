@@ -1,11 +1,10 @@
 //Manejo de las rutas para las prendas
 
 const express = require("express");
+const { getAllPrendas } = require("../controllers/prenda");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Traer todas las prendas");
-});
+router.get("/", getAllPrendas);
 
 router.get("/:id", (req, res) => {
   res.send("Traer una prenda por ID");
