@@ -9,6 +9,7 @@ const Prenda = sequelize.define(
       type: DataTypes.INTEGER(11),
       primaryKey: true,
       allowNull: false,
+      autoIncrement: true,
     },
     precio: {
       type: DataTypes.INTEGER(50),

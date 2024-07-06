@@ -30,4 +30,15 @@ const getPrendaById = async (req, res) => {
   }
 };
 
-module.exports = { getAllPrendas, getPrendaById };
+const createPrenda = async (req, res) => {
+  try {
+    const { body } = req;
+    const newPrenda = await prendaModel.create(body);
+    res.status(201).json(newPrenda);
+  } catch (error) {
+    console.log("Error al intentar crear una nueva prenda: ", error);
+    handleHttpError(res, "ERROR_POST_PRENDA", 500);
+  }
+};
+
+module.exports = { getAllPrendas, getPrendaById, createPrenda };
