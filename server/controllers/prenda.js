@@ -41,4 +41,23 @@ const createPrenda = async (req, res) => {
   }
 };
 
-module.exports = { getAllPrendas, getPrendaById, createPrenda };
+const updatePrenda = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { body } = req;
+
+    const prenda = await prendaModel.findByPk(id);
+
+    if (!prenda) {
+      handleHttpError(res, "ERROR_PRENDA_NOT_FOUND", 403);
+    }
+
+    await prenda.update(body);
+    res.status(200).json(prenda);
+  } catch (error) {
+    console.log("Error, no se pudo actualizar la peluquería: ", error);
+    handleHttpError(res, "ERROR_PUT_PRENDA", 500);
+  }
+};
+
+module.exports = { getAllPrendas, getPrendaById, createPrenda, updatePrenda };

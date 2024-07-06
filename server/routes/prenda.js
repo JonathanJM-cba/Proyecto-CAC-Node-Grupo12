@@ -5,6 +5,7 @@ const {
   getAllPrendas,
   getPrendaById,
   createPrenda,
+  updatePrenda,
 } = require("../controllers/prenda");
 const router = express.Router();
 
@@ -14,9 +15,7 @@ router.get("/:id", getPrendaById);
 
 router.post("/", createPrenda);
 
-router.put("/:id", (req, res) => {
-  res.send("Editar una prenda");
-});
+router.put("/:id", updatePrenda);
 
 router.delete("/:id", (req, res) => {
   res.send("Eliminar una prenda");
