@@ -6,6 +6,7 @@ const {
   getPrendaById,
   createPrenda,
   updatePrenda,
+  deletePrenda,
 } = require("../controllers/prenda");
 const router = express.Router();
 
@@ -17,8 +18,6 @@ router.post("/", createPrenda);
 
 router.put("/:id", updatePrenda);
 
-router.delete("/:id", (req, res) => {
-  res.send("Eliminar una prenda");
-});
+router.delete("/:id", deletePrenda);
 
 module.exports = router;

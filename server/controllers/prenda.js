@@ -60,4 +60,30 @@ const updatePrenda = async (req, res) => {
   }
 };
 
-module.exports = { getAllPrendas, getPrendaById, createPrenda, updatePrenda };
+const deletePrenda = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const prenda = await prendaModel.findByPk(id);
+
+    if (!prenda) {
+      handleHttpError(res, "ERROR_PRENDA_NOT_FOUND", 403);
+    }
+
+    await prenda.destroy();
+    res.status(200).json({
+      message: "Prenda eliminada exitosamente",
+      data: prenda,
+    });
+  } catch (error) {
+    console.log("Error, no se pudo eliminar la prenda: ", error);
+    handleHttpError(res, "ERROR_DELETE_PRENDA", 500);
+  }
+};
+
+module.exports = {
+  getAllPrendas,
+  getPrendaById,
+  createPrenda,
+  updatePrenda,
+  deletePrenda,
+};
