@@ -13,4 +13,21 @@ const getAllPrendas = async (req, res) => {
   }
 };
 
-module.exports = { getAllPrendas };
+const getPrendaById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const prenda = await prendaModel.findWithCategoria(id);
+
+    if (!prenda) {
+      console.log("No existe la una prenda con ID: ", id);
+      handleHttpError(res, "ERROR_PRENDA_ID_NOT_FOUND", 404);
+    }
+
+    res.status(200).json(prenda);
+  } catch (error) {
+    console.log("Error al obtener la prenda por ID: ", error);
+    handleHttpError(res, "ERROR_GET_PRENDA_BY_ID", 500);
+  }
+};
+
+module.exports = { getAllPrendas, getPrendaById };
