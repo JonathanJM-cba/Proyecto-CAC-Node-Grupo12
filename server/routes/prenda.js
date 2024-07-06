@@ -8,15 +8,16 @@ const {
   updatePrenda,
   deletePrenda,
 } = require("../controllers/prenda");
+const validatorPrenda = require("../validators/prenda");
 const router = express.Router();
 
 router.get("/", getAllPrendas);
 
 router.get("/:id", getPrendaById);
 
-router.post("/", createPrenda);
+router.post("/", validatorPrenda, createPrenda);
 
-router.put("/:id", updatePrenda);
+router.put("/:id", validatorPrenda, updatePrenda);
 
 router.delete("/:id", deletePrenda);
 
